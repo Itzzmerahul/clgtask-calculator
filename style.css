@@ -1,0 +1,53 @@
+/* Neumorphism Style */
+body {
+    background: #e0e5ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    background: #e0e5ec;
+    box-shadow: 9px 9px 16px #a3b1c6, -9px -9px 16px #ffffff;
+}
+
+.display {
+    background: #e0e5ec;
+    box-shadow: inset 5px 5px 10px #a3b1c6, inset -5px -5px 10px #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin-bottom: 20px;
+}
+
+.previous-operand { font-size: 1.2rem; color: #555; }
+.current-operand { font-size: 2rem; color: #333; }
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background: #e0e5ec;
+    box-shadow: 5px 5px 10px #a3b1c6, -5px -5px 10px #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+button:active {
+    box-shadow: inset 5px 5px 10px #a3b1c6, inset -5px -5px 10px #ffffff;
+}
+
+.span-two { grid-column: span 2; }
